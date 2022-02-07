@@ -31,21 +31,21 @@ Given('User setup the metamask plugin', () => {
     elementHelper.click(metaMaskPO.closeButton);
     elementHelper.click(metaMaskPO.networkIcon);
     elementHelper.click(metaMaskPO.selectNetwork);
-    browser.url("https://burp.staging.coinburp.ninja/stake");
+    browser.url("https://burptoken.com/stake");
     browser.pause(3000)
     $('//input[@name=\'checkedA\']').click();
     $('//input[@name=\'checkedB\']').click();
     $('//span[contains(text(),\'Submit\')]').isDisplayed();
     $('//span[contains(text(),\'Submit\')]').click();
     browser.pause(2000)
-    browser.switchWindow('https://burp.staging.coinburp.ninja/stake');
+    browser.switchWindow('https://burptoken.com/stake');
     elementHelper.click(homepagePo.connectedToWalletButton)
     elementHelper.click(homepagePo.connectMetaMaskButton)
     browser.pause(3000)
     browser.switchWindow('MetaMask Notification');
     elementHelper.click(metaMaskPO.nextButton);
     elementHelper.click(metaMaskPO.connectButton);
-    browser.switchWindow('https://burp.staging.coinburp.ninja/stake');
+    browser.switchWindow('https://burptoken.com/stake');
     browser.pause(5000)
 
 
@@ -73,7 +73,7 @@ When('User click on start state button and confirm the payment', () => {
         browser.pause(3000);
         browser.switchWindow('MetaMask Notification');
         elementHelper.click(homepagePo.confirmButton);
-        browser.switchWindow('https://burp.staging.coinburp.ninja/stake');
+        browser.switchWindow('https://burptoken.com/stake');
         browser.pause(10000);
         ////div[@class='MuiBox-root jss2794']
     }
@@ -85,7 +85,7 @@ When('User click on start state button and confirm the payment', () => {
     browser.switchWindow('MetaMask Notification');
     elementHelper.click(homepagePo.confirmButton);
     browser.pause(5000);
-    browser.switchWindow('https://burp.staging.coinburp.ninja/stake');
+    browser.switchWindow('https://burptoken.com/stake');
     browser.pause(20000);
 });
 When('User click on withdraw button',()=>{
