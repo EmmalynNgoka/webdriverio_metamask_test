@@ -8,12 +8,12 @@ Use npm to install the dependencies
 npm install
 ```
 
-## Command
-
+### Command
 #### Run all features
-```
+```bash
 npm run node_modules/.bin/wdio wdio.conf.js --suite
-
-#### Run a specific feature
 ```
+#####  Run a specific feature file
+```bash
 npm run node_modules/.bin/wdio wdio.conf.js --suite=featurename
+```
